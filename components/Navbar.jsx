@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from 'react'; // Move this import before the other imports
 
 import Link from 'next/link';
