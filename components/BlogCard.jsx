@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { fadeIn } from '../utils/motion';
 
-const BlogCard =({mgUrl,title,subtitle,index,}) => {
+const BlogCard = ({ imgUrl, title, subtitle, index }) => {
   return (
     <motion.div
       variants={fadeIn('up', 'spring', index * 0.5, 1)}
