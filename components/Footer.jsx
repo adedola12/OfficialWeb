@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { socials } from '../constants';
 import { footerVariants } from '../utils/motion';
 
-const currentDate = new Date ();
-const currentYear = currentDate.getFullYear ();
+const currentDate = new Date();
+const currentYear = currentDate.getFullYear();
 
 const Footer = () => (
   <motion.footer
@@ -19,7 +19,7 @@ const Footer = () => (
     <div className="mx-auto flex flex-col gap-8">
       <div className="flex items-center justify-between flex-wrap gap-5">
         <h4 className="font-bold md:text-[54px] text-[44px] text-white">
-          {' '}Get Started With Our Courses
+          Get Started With Our Courses
         </h4>
         <button
           type="button"
@@ -38,12 +38,12 @@ const Footer = () => (
         <div className="flex items-center justify-between flex-wrap gap-4">
           <h4 className="font-extrabold text-[24px] text-white">ADLM Studio</h4>
           <p className="font-normal text-[14px] text-white opacity-50">
-            Copyright {currentYear} ADLMStudio. All rights reserved.
+            Copyright {currentYear} ADLM Studio. All rights reserved.
           </p>
 
           <div className="flex gap-4">
-            {socials.map (socials => (
-              <img key={socials.name} src={socials.url} alt={socials.name} />
+            {socials.map((social) => (
+              <img key={social.name} src={social.url} alt={social.name} />
             ))}
           </div>
         </div>
