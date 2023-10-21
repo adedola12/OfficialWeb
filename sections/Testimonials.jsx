@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { fadeIn, staggerContainer } from "../utils/motion"
 import { TypingText } from "../components"
 import { useState } from "react"
+import { SectionWrapper } from "../hoc"
 
 const Testimonials = () => {
   //Add an Input section Upon SignIn
@@ -58,4 +59,4 @@ const Testimonials = () => {
   )
 }
 
-export default Testimonials
+export default SectionWrapper(Testimonials, 'Testimonials')

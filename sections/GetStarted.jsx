@@ -4,6 +4,7 @@ import { motion } from "framer-motion"
 import { StartSteps, TitleText, TypingText } from "../components"
 import { fadeIn, staggerContainer } from "../utils/motion"
 import { startingFeatures } from "../constants"
+import { SectionWrapper } from "../hoc"
 
 const GetStarted = () => {
   return (
@@ -35,4 +36,4 @@ const GetStarted = () => {
   )
 }
 
-export default GetStarted
+export default SectionWrapper(GetStarted, "getstarted")

@@ -6,6 +6,7 @@ import emailjs from '@emailjs/browser'
 
 import { TitleText, TypingText } from "../components"
 import { slideIn, staggerContainer } from "../utils/motion"
+import { SectionWrapper } from "../hoc"
 
 const Contact = () => {
   const formRef = useRef()
@@ -122,4 +123,4 @@ const Contact = () => {
   )
 }
 
-export default Contact
+export default SectionWrapper(Contact, 'Contact')

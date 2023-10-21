@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { fadeIn, staggerContainer } from "../utils/motion";
 import { TypingText } from "../components";
+import { SectionWrapper } from "../hoc";
 
 const About = () => {
   return (
@@ -68,4 +69,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SectionWrapper(About, 'About');

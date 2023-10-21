@@ -19,7 +19,7 @@ const Navbar = () => {
     className="fixed top-0 left-0 w-full bg-blue-500 p-4 shadow-lg z-10"
     >
       <div className="container mx-auto flex items-center justify-between nav">
-        <Link href="/" className="text-bold">
+        <Link href="/" className="text-extrabold ">
           ADLM <span className='sm:hidden'>Studio</span>
         </Link>
 

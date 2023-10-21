@@ -6,6 +6,7 @@ import CourseCard from "../components/CourseCard"
 import { staggerContainer } from "../utils/motion"
 import { courses } from "../constants"
 import { useState } from "react"
+import { SectionWrapper } from "../hoc"
 
 const Courses = () => {
   const [active, setActive] = useState(false)
@@ -38,4 +39,4 @@ const Courses = () => {
   )
 }
 
-export default Courses
+export default SectionWrapper(Courses, 'Courses')

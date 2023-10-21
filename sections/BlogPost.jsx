@@ -5,6 +5,7 @@ import { TitleText, TypingText } from "../components"
 import { staggerContainer } from "../utils/motion"
 import { blog } from "../constants"
 import BlogCard from "../components/BlogCard"
+import { SectionWrapper } from "../hoc"
 
 const BlogPost = () => {
   return (
@@ -34,4 +35,4 @@ const BlogPost = () => {
   )
 }
 
-export default BlogPost
+export default SectionWrapper (BlogPost, 'Blog')
